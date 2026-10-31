@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d7666eed-7835-426a-b1de-5f5cffb0e421">
+  <producedTypes>
+    <objectType typeId="94a05ae2-6574-4319-acad-ac94a65213cb" valueTypeId="d439c99b-8d9a-4695-85c1-450eaf3681f1"/>
+    <refType typeId="d7f19d7c-e481-4392-ac6d-578d155bfeca" valueTypeId="95f436df-38b2-49d8-92e2-752111149968"/>
+    <selectionType typeId="fbedaba0-d213-414c-889f-e3243b2c04b8" valueTypeId="bf0f7bf2-287c-477e-a52d-ac8723d7deac"/>
+    <listType typeId="41c3958d-3e7a-4cec-9c11-a1b9db7ab9c8" valueTypeId="a882d282-a5e4-4fa4-a1e3-0c7360815cbd"/>
+    <managerType typeId="f8fcacc9-67df-4826-aabe-c7d9d2f47014" valueTypeId="6bb251a9-ecf6-4774-b650-15c8b909ad18"/>
+  </producedTypes>
+  <name>СИ_ИнструментыАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Инструменты агента</value>
+  </synonym>
+  <comment>Реестр зарегистрированных инструментов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Инструмент агента</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Инструменты агента</value>
+  </listPresentation>
+  <hierarchical>true</hierarchical>
+  <descriptionLength>50</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined/>
+  <defaultObjectForm>Catalog.СИ_ИнструментыАгента.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СИ_ИнструментыАгента.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="bbef5228-01d2-42e9-b580-53f0049f2cf9">
+    <name>URL</name>
+    <synonym>
+      <key>ru</key>
+      <value>URL</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="271e6883-8029-45da-baa8-d9fe4daeb89a">
+    <name>ДатаРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата регистрации</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="e7ba4d6d-6ccb-4ff0-af3b-6f8f692de26c">
+    <name>ЗаголовкиJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовки JSON</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="7f0418df-11ef-4a43-a3e1-d38813620a44">
+    <name>ЗначениеАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение авторизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="366eb62c-c6a2-426c-97d6-aeab6b0cffa2">
+    <name>СхемаТелаЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема тела запроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="e0037136-bad2-4dea-b165-cc7af0ad148a">
+    <name>ИмяФункции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя функции</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="c36bfda1-c35e-4a8b-a344-c1f1a85cf311">
+    <name>ИмяФункцииОбработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя функции обработчика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="eac90cd3-9f95-4bf7-aa88-8e756d099dab">
+    <name>ИспользоватьАвторизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать авторизацию</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="aa4c984b-3f7a-471d-a588-9acfdbc985e1">
+    <name>ТаймаутВызова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут вызова</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="3d6efd6e-e0d4-4700-8d6c-7c2d41c1545e">
+    <name>МетодHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод HTTP</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="f6358698-086c-4868-8494-cf280d1d2a1e">
+    <name>Описание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="4d684dea-5eea-40cb-ac69-239a71ebf3b7">
+    <name>ПараметрыSchema</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры Schema</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="c179e317-b97b-4c07-ba5b-3bba6e03b0ac">
+    <name>Разрешен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешён</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="6794c851-5096-4e29-a875-25f3e5a4438f">
+    <name>ТипАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип авторизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_ТипыАвторизации</types>
+    </type>
+  </attributes>
+  <attributes uuid="83dc562c-c1cb-4cde-a473-fb23d4859558">
+    <name>ТипИнструмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип инструмента</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_ТипыИнструментов</types>
+    </type>
+  </attributes>
+  <attributes uuid="eba9bd5a-085e-4098-b3ae-60e64e43912d">
+    <name>ТребуетРазрешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрашивать разрешение</value>
+    </synonym>
+    <comment>Запрашивать подтверждение пользователя перед исполнением инструмента</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="5ba3997c-fa5f-4e65-9e61-28d9f8ff98be">
+    <name>Слова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключевые слова</value>
+    </synonym>
+    <comment>Ключевые слова вопроса, по которым группа инструмента поднимается в промпт без fetch_toolset (через запятую)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>300</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="acef14cf-02e2-4747-b434-bdc0a18e4fbf">
+    <name>Действие</name>
+    <synonym>
+      <key>ru</key>
+      <value>Действие (статус шага)</value>
+    </synonym>
+    <comment>Человекочитаемый статус шага для индикатора чата, напр. &quot;Смотрю остатки товара…&quot;; пусто — фолбэк на первую фразу описания</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <tabularSections uuid="8f41e26e-7b5a-4772-80a1-964044fadebd">
+    <producedTypes>
+      <objectType typeId="1bfa50b5-d7ff-4a45-afee-98b3d3f4cf8c" valueTypeId="239ab9c5-9d2e-41bb-a97f-c0a469153e5e"/>
+      <rowType typeId="00bd3735-4104-46dc-9175-0d0c22d4bf34" valueTypeId="c74d15eb-fa99-4551-b8e9-d456dff68190"/>
+    </producedTypes>
+    <name>РазрешённыеРежимы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешённые режимы</value>
+    </synonym>
+    <attributes uuid="b5820c15-c227-4673-b753-1afff287f938">
+      <name>Режим</name>
+      <synonym>
+        <key>ru</key>
+        <value>Режим</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СИ_РежимиРаботы</types>
+      </type>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="714f1f2a-bb45-435f-a3f1-a17b3e47da04">
+    <producedTypes>
+      <objectType typeId="1f1dc216-a999-4357-a6f3-5242fbefcfad" valueTypeId="1b411016-ff83-4e01-beea-5a00480bcd10"/>
+      <rowType typeId="ecacb9a9-79dd-482e-ac40-94305b603539" valueTypeId="b7c82c7f-16fb-449a-ad7d-5482924a6e6c"/>
+    </producedTypes>
+    <name>ПримерыВызова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Примеры вызова</value>
+    </synonym>
+    <attributes uuid="1781767c-747a-4aac-9eb6-3ff31e773b4c">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+    </attributes>
+    <attributes uuid="e581915c-370e-4314-bd68-e92fe60c7a17">
+      <name>АргументыJSON</name>
+      <synonym>
+        <key>ru</key>
+        <value>Аргументы JSON</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+    </attributes>
+    <attributes uuid="ad69c8a4-d426-4d7f-911d-6700cadc7d83">
+      <name>РезультатJSON</name>
+      <synonym>
+        <key>ru</key>
+        <value>Результат JSON</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+    </attributes>
+  </tabularSections>
+  <forms uuid="832fbff0-22fd-4310-ad56-822bbf2171ba">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="101f3a00-98e9-4d13-b19b-a5075e03ec42">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <comment>Форма элемента справочника Инструменты агента</comment>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

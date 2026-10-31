@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e287b52-e24e-4f5b-956c-f038399f7470">
+  <name>СИ_ОстановитьЧат</name>
+  <synonym>
+    <key>ru</key>
+    <value>С и остановить чат</value>
+  </synonym>
+</mdclass:CommonPicture>

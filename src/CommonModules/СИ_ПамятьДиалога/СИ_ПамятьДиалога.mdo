@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96d92cfe-8070-4406-bd34-4f26ad3468d7">
+  <name>СИ_ПамятьДиалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Память диалога</value>
+  </synonym>
+  <comment>Контекстная память: факты, релевантный отбор, сводка, TTL</comment>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

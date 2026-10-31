@@ -1,0 +1,37 @@
+# Eclipse / EDT служебное
+.metadata/
+bin/
+build/
+# .settings/ сознательно НЕ игнорируем: com.e1c.v8codestyle.prefs — это
+# профиль проверок кода проекта, EDT рекомендует держать его в Git.
+# .settings/
+
+# Служебные файлы выгрузки/загрузки XML (Конфигуратор)
+DumpFilesIndex.txt
+ConfigDumpInfo.xml
+
+# Конфигурации поставщиков — не нужны в Git разработчика
+src/Configuration/ParentConfigurations.bin
+src/Configuration/ParentConfigurations/**
+
+# Локальные базы разработчика (*.CD — оба регистра: сравнение в Git регистрозависимое)
+*.1CD
+*.cd
+*.CD
+
+# Кэш-файлы платформы
+*.dt.bak
+
+# Журналы и временные файлы
+*.log
+*.tmp
+*~
+
+# Локальные резервные копии редакторов
+*.bak
+*.orig
+
+# Мусор операционной системы
+Thumbs.db
+Desktop.ini
+.DS_Store

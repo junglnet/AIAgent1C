@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e35bfeb9-2158-4192-80e5-4a4974c5ae65">
+  <producedTypes>
+    <refType typeId="25801e50-4971-4eab-8147-d82719079287" valueTypeId="42aaf249-5eb6-4043-8039-3e8468cfab8d"/>
+    <listType typeId="ac8e3047-dd6b-4289-af95-214bdd42036a" valueTypeId="63bf581c-e4c0-440a-9092-df0f5316be70"/>
+    <managerType typeId="002059fa-05c1-4702-8549-36b4fb4349e3" valueTypeId="8e3a3760-4aff-4247-bcb7-344629de7193"/>
+  </producedTypes>
+  <name>СИ_ТипыИнструментов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы инструментов</value>
+  </synonym>
+  <comment>Типы инструментов: Инструмент1С / ИнструментВнешний</comment>
+  <enumValues uuid="f333b3f4-e8db-4809-9578-ca1cc948e593">
+    <name>Инструмент1С</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструмент 1С</value>
+    </synonym>
+    <comment>Встроенный инструмент платформы 1С (обработчик = BSL-функция)</comment>
+  </enumValues>
+  <enumValues uuid="6aeca66e-2615-40cb-8663-94c23b8b9f91">
+    <name>ИнструментВнешний</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструмент внешний</value>
+    </synonym>
+    <comment>Внешний HTTP-инструмент (адаптер через ИнструментыВнешние.ВызватьHTTP)</comment>
+  </enumValues>
+  <enumValues uuid="ca92e7b5-df49-422d-87a9-253c2ce91926">
+    <name>ИнструментMCP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструмент MCP</value>
+    </synonym>
+    <comment>Инструмент, получаемый через MCP-сервер (tools/list, tools/call)</comment>
+  </enumValues>
+</mdclass:Enum>

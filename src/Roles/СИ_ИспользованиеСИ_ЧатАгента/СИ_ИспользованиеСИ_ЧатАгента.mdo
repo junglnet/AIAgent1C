@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2018dbea-54f0-43dc-b752-a0ba1e02d063">
+  <name>СИ_ИспользованиеСИ_ЧатАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Использование СИ_ЧатАгента</value>
+  </synonym>
+</mdclass:Role>

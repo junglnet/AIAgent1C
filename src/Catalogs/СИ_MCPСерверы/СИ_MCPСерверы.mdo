@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a8e19f0-cc6f-48fb-82e1-3642f4a13986">
+  <producedTypes>
+    <objectType typeId="894f7bd8-fa8a-4bbe-bcbf-05f576f72196" valueTypeId="300669c7-a53a-42ff-9e2b-1e7f8722970c"/>
+    <refType typeId="4dc36299-9f5e-426c-826e-971dcef1d2e1" valueTypeId="487e0876-2166-42c0-97e7-5e6a9d417b26"/>
+    <selectionType typeId="afacc328-f5c6-4b56-b8d5-3b8fe7dd881f" valueTypeId="5973ba49-a075-42a7-9351-e6e157093e86"/>
+    <listType typeId="1b96a554-ca9e-48ae-80af-79ce1dc7c135" valueTypeId="9d5d5e9e-b4d5-44e0-a68f-a6090c01b523"/>
+    <managerType typeId="81734f58-3103-4ea7-8a45-a760f32c3f76" valueTypeId="883314e1-533b-45f6-9509-93d8fb9c2609"/>
+  </producedTypes>
+  <name>СИ_MCPСерверы</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) MCP-серверы</value>
+  </synonym>
+  <comment>Подключения к MCP-серверам и кэш их инструментов</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <objectPresentation>
+    <key>ru</key>
+    <value>MCP-сервер</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>MCP-серверы</value>
+  </listPresentation>
+  <descriptionLength>50</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <defaultObjectForm>Catalog.СИ_MCPСерверы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СИ_MCPСерверы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="2de21ba6-ac92-47fd-8654-38307c61db08">
+    <name>ТипПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип подключения</value>
+    </synonym>
+    <comment>Транспорт MCP-протокола</comment>
+    <type>
+      <types>EnumRef.СИ_ТипыПодключенийMCP</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="21301f6b-fe31-47c4-b4a9-b0d31d988a51">
+    <name>URL</name>
+    <synonym>
+      <key>ru</key>
+      <value>URL</value>
+    </synonym>
+    <comment>Адрес endpoint MCP-сервера</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="7e511ff5-7d2b-4f1a-a246-9505aa386d5a">
+    <name>ЗаголовкиJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовки JSON</value>
+    </synonym>
+    <comment>Дополнительные HTTP-заголовки в формате JSON</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="34ca8079-435d-4336-b3a5-5b6af262500c">
+    <name>ИспользоватьАвторизацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать авторизацию</value>
+    </synonym>
+    <comment>Использовать авторизацию для запросов к серверу</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="7b5b8968-e52c-4932-b1c5-5be024c8f310">
+    <name>ТипАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип авторизации</value>
+    </synonym>
+    <comment>Тип авторизации</comment>
+    <type>
+      <types>EnumRef.СИ_ТипыАвторизации</types>
+    </type>
+  </attributes>
+  <attributes uuid="9e98b573-b1a9-4e55-b617-7d65ca26ed17">
+    <name>ЗначениеАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение авторизации</value>
+    </synonym>
+    <comment>Значение авторизации (токен/ключ)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="ca4327a4-2aad-4612-8cb0-9a786d4e07cf">
+    <name>ТребуетИнициализацию</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует инициализацию</value>
+    </synonym>
+    <comment>Выполнять рукопожатие initialize перед запросами</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="73eb6dbb-f6e9-43db-a07c-2b4ca00b395f">
+    <name>ВерсияПротокола</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия протокола</value>
+    </synonym>
+    <comment>Версия MCP-протокола</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="6183a5b4-38d5-49fd-895b-113b552d03c2">
+    <name>ПроверятьSSL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять SSL</value>
+    </synonym>
+    <comment>Проверять SSL-сертификат</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="71a9ef09-6696-4a7b-8435-07916cadf1c4">
+    <name>ТаймаутВызова</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут вызова</value>
+    </synonym>
+    <comment>Таймаут вызова, сек</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="08b8250a-7154-429b-80c6-dac46a5024cb">
+    <name>Включен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включён</value>
+    </synonym>
+    <comment>Признак активности сервера</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="bace530e-f642-40ac-9343-e56241b6f6fa">
+    <name>ДатаПоследнейПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата последней проверки</value>
+    </synonym>
+    <comment>Дата последней проверки подключения</comment>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="d0fd0ec0-caf0-425c-90f3-c487493e5a68">
+    <name>РезультатПоследнейПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат последней проверки</value>
+    </synonym>
+    <comment>Результат последней проверки (диагностика)</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="530c4423-d4db-4770-9a1c-a1f4d7bb4312">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <comment>Произвольный комментарий</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="992d7b84-ad74-4e36-b398-b88136c3cf81">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор сервера</value>
+    </synonym>
+    <comment>Стабильный латинский идентификатор сервера для построения API-имён инструментов и разрешения коллизий.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <tabularSections uuid="433fe790-0a65-42ec-82f6-15f42186b1df">
+    <producedTypes>
+      <objectType typeId="6fdaacc1-2ec4-468c-aca7-94a0ffe90da7" valueTypeId="e7727ebe-540f-4c22-ba6a-fc2b8039900a"/>
+      <rowType typeId="b6e1502d-71b6-43a0-81a2-8721626e70f7" valueTypeId="98173393-886e-4f9b-a6ef-bbe2d58e0cc7"/>
+    </producedTypes>
+    <name>Инструменты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инструменты</value>
+    </synonym>
+    <attributes uuid="f029b861-65f6-4c93-a7a9-0c74fa4fdb22">
+      <name>ИмяИнструмента</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя инструмента</value>
+      </synonym>
+      <comment>Имя инструмента (поле name из tools/list)</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="d05ea02c-e2e4-42e5-a281-94266750395d">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <comment>Описание инструмента</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
+    <attributes uuid="7f12fcd5-48f1-45e0-94ad-f1905fe65930">
+      <name>ПараметрыSchema</name>
+      <synonym>
+        <key>ru</key>
+        <value>Параметры Schema</value>
+      </synonym>
+      <comment>JSON-схема параметров (inputSchema)</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+    </attributes>
+    <attributes uuid="0ac404c7-025a-4d4b-b056-fc7fe638872d">
+      <name>Разрешен</name>
+      <synonym>
+        <key>ru</key>
+        <value>Разрешён</value>
+      </synonym>
+      <comment>Признак доступности инструмента</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </attributes>
+    <attributes uuid="a4495ec3-6bdc-44fe-b8cc-b9b0ba3145a0">
+      <name>ДатаРегистрации</name>
+      <synonym>
+        <key>ru</key>
+        <value>Дата регистрации</value>
+      </synonym>
+      <comment>Дата регистрации инструмента</comment>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+    </attributes>
+    <attributes uuid="238faf06-13f2-4c1c-9163-f34cac1b3f24">
+      <name>ТребуетРазрешения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Запрашивать разрешение</value>
+      </synonym>
+      <comment>Запрашивать подтверждение пользователя перед исполнением MCP-инструмента</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="79e1f08b-6306-4657-872c-95516caf4ca9">
+    <producedTypes>
+      <objectType typeId="198528db-9a68-48d1-a949-971e4de48627" valueTypeId="a794614e-73d7-4090-a43e-bcb19a3275c2"/>
+      <rowType typeId="08564984-c24a-45f8-a2e6-a0c2da9bddb1" valueTypeId="afbaf716-87e6-4bf0-abe5-e7597157c442"/>
+    </producedTypes>
+    <name>РежимыИнструментов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режимы инструментов</value>
+    </synonym>
+    <attributes uuid="563815a7-98b1-46c0-b5b2-4d4a533406a9">
+      <name>Инструмент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инструмент</value>
+      </synonym>
+      <comment>Имя инструмента, совпадает с Инструменты.ИмяИнструмента</comment>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="dcde042e-5a5d-4308-9903-cab875b61177">
+      <name>Режим</name>
+      <synonym>
+        <key>ru</key>
+        <value>Режим</value>
+      </synonym>
+      <comment>Режим работы, в котором доступен инструмент</comment>
+      <type>
+        <types>CatalogRef.СИ_РежимиРаботы</types>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+  </tabularSections>
+  <forms uuid="b29c7f71-75ef-4d67-ba6a-4832a52b4306">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+  </forms>
+  <forms uuid="49204de5-1cff-4504-8a0b-efcd54537a84">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+  </forms>
+  <forms uuid="0345906a-4d71-4817-ac74-ac1e5ac70fd6">
+    <name>ФормаВыбораИнструментов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор инструментов MCP-сервера</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

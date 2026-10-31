@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f753aac8-0083-4159-8ec0-d114dc7a608c">
+  <producedTypes>
+    <managerType typeId="015e4965-1e47-4824-9729-59c73c3adb1f" valueTypeId="6a1d3446-3815-4f4d-8be3-640bcc17274e"/>
+    <valueManagerType typeId="d0b15a5b-f171-4bf7-bbb8-6d51530d3055" valueTypeId="b5006e3b-cf73-4fd6-b97d-84f3ff8c87d5"/>
+    <valueKeyType typeId="602aa5b9-95e6-4b7e-9982-6b6cb22c6c6b" valueTypeId="87163a4c-2558-4f75-b544-6ccfef318d3e"/>
+  </producedTypes>
+  <name>СИ_ЗапрещенныеОбъектыЗапросов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запрещенные объекты запросов</value>
+  </synonym>
+  <comment>Список объектов метаданных, запрещенных для запросов инструмента ExecuteDBQuery. Значения через точку с запятой.</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1000</length>
+    </stringQualifiers>
+  </type>
+</mdclass:Constant>

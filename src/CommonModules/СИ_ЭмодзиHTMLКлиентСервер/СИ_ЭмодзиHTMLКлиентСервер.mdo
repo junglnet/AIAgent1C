@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a5c3e1b2-4f6d-4e8a-9b7c-2d3e4f5a6b7c">
+  <name>СИ_ЭмодзиHTMLКлиентСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Эмодзи HTML</value>
+  </synonym>
+  <comment>Замена эмодзи вне BMP на inline SVG/текст для HTML-поля (совместимость с Trident)</comment>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f7cf8c4a-03fc-4a79-bc76-fdbde13cb766">
+  <name>СИ_ОбслуживаниеАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Обслуживание агента</value>
+  </synonym>
+  <comment>Регламентное обслуживание агента: TTL памяти диалога, зависшие заходы. Метод Выполнить для регламентного задания СИ_ОбслуживаниеАгента</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

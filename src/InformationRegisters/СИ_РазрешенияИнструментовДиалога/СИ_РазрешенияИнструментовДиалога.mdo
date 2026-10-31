@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bca9c14a-f33e-4d0f-a809-65dc335610e5">
+  <producedTypes>
+    <selectionType typeId="3dbd0caf-93d3-4823-8295-c8aef8686aa4" valueTypeId="e6f5716e-5ae3-4d44-8027-5918cbc69f40"/>
+    <listType typeId="a2aeed8c-88f7-486e-a90d-d999022b746a" valueTypeId="6d17a565-f945-4d03-b8ae-84321f4012bf"/>
+    <managerType typeId="93ed4bb1-ed7d-4ef9-9bde-8b9225a765ef" valueTypeId="107563ff-e932-481d-afb5-449d71af94a1"/>
+    <recordSetType typeId="00e6cc76-3708-4568-88ca-662471b63cfe" valueTypeId="edf5b00e-87e7-48e3-bed7-d4e9c7500964"/>
+    <recordKeyType typeId="5f887e69-d1ad-4bcb-9fe6-f62c4a6e0ffc" valueTypeId="05b255c7-cab9-421b-b6ad-b813aafb94c1"/>
+    <recordType typeId="27cf331b-2ae0-4e6c-9eb3-0d3f860dd2a8" valueTypeId="1860d265-7444-433e-9cfd-7fb37d01d3ce"/>
+    <recordManagerType typeId="92442249-ff1e-4986-aa88-94c977281c4e" valueTypeId="0ef580ca-247a-4450-a3bb-b3cd80f5aa40"/>
+  </producedTypes>
+  <name>СИ_РазрешенияИнструментовДиалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Разрешения инструментов диалога</value>
+  </synonym>
+  <comment>Запомненные решения «не спрашивать в этом диалоге» по инструментам агента</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Разрешения инструментов диалога</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Разрешения инструментов диалога</value>
+  </listPresentation>
+  <resources uuid="92c90b59-2da2-4cf8-b2f0-15adf6712d74">
+    <name>Разрешено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешено</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </resources>
+  <dimensions uuid="5f55c382-0aa5-4e85-a36e-e2a9bb248a9b">
+    <name>Диалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диалог</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_ДиалогиАгента</types>
+    </type>
+  </dimensions>
+  <dimensions uuid="9022fa78-fee2-4df4-a642-c9b62426f5ac">
+    <name>ИмяИнструмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя инструмента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </dimensions>
+</mdclass:InformationRegister>

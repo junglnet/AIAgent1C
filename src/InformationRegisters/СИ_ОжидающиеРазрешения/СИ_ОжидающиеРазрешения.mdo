@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b24e5574-da18-45ec-a8c3-280cc26ea79f">
+  <producedTypes>
+    <selectionType typeId="af7a9f22-9335-4a5d-84cf-3ca966945e16" valueTypeId="3b713c2e-719c-4fbc-93d7-9c4bd658e53b"/>
+    <listType typeId="67d2a3af-473c-4ee1-9967-571a0e36636b" valueTypeId="e48b311d-a98e-4389-b859-0dcfeb016318"/>
+    <managerType typeId="9e7013bc-27a6-4a00-8e91-c6967b05880e" valueTypeId="9c1d06bb-5596-43c9-ab54-0d47f715eb21"/>
+    <recordSetType typeId="70bdc43c-942d-4555-9dc6-52d6fc8667d7" valueTypeId="df28f95d-d6d7-44c0-95d6-48d4dde967b0"/>
+    <recordKeyType typeId="5a69c5bb-5d55-4f1a-8fd5-5816cc90d1da" valueTypeId="96728b2f-f6ef-4dff-863e-f5c99d3b0392"/>
+    <recordType typeId="53c069a1-6c15-410e-ac34-f2bcfec12e60" valueTypeId="76f48e2a-f650-4aa2-96cc-d505bcbe7626"/>
+    <recordManagerType typeId="c85075fb-95f5-4117-9db5-8f863b554b1a" valueTypeId="15ee2ae1-b8e3-4317-bc6a-c2a86ccd48a1"/>
+  </producedTypes>
+  <name>СИ_ОжидающиеРазрешения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ожидающие разрешения</value>
+  </synonym>
+  <comment>Вызовы инструментов, ожидающие подтверждения пользователя (двухфазный запуск агента)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Ожидающие разрешения</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ожидающие разрешения</value>
+  </listPresentation>
+  <resources uuid="5c8a894a-8c5e-4c32-8db0-3ba637d72b8a">
+    <name>ВызовыJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вызовы (JSON)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <resources uuid="b67c88d3-9f5e-476f-bacb-5840779dfb73">
+    <name>ДатаЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запроса</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </resources>
+  <dimensions uuid="fda0cd4e-814b-4bd5-b562-84037827e2fa">
+    <name>Диалог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диалог</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_ДиалогиАгента</types>
+    </type>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1bbca0ab-7500-4c29-b8c8-d3733599fedc">
+  <producedTypes>
+    <refType typeId="9756be56-74f5-4610-a186-12ee4cc993a3" valueTypeId="18e39e28-7684-4034-bab0-ebdf298f760a"/>
+    <listType typeId="f2a0064b-24cc-435e-a13c-614f0b8da3d3" valueTypeId="5998cf08-fd7a-4ac1-acb2-f5fcc08cd70e"/>
+    <managerType typeId="e57e58f7-c9ec-4405-af7e-fdfa59cb05d6" valueTypeId="eaac6b2d-96d3-458f-b611-5132ae3b9a3a"/>
+  </producedTypes>
+  <name>СИ_РежимыРаботыАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Режимы работы агента</value>
+  </synonym>
+  <comment>Режимы работы агента: Чат / ToolCalling / Structured / Streaming</comment>
+  <enumValues uuid="761ccb12-69f3-4e89-8562-575cf10c260a">
+    <name>Чат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Чат</value>
+    </synonym>
+    <comment>Стандартный запрос без tools (одноразовый или многоходовый диалог без вызова функций)</comment>
+  </enumValues>
+  <enumValues uuid="a1374ea8-e236-41a6-a1d0-2fee32431a76">
+    <name>ToolCalling</name>
+    <synonym>
+      <key>ru</key>
+      <value>Tool Calling</value>
+    </synonym>
+    <comment>Запрос с tools + tool_choice; модель возвращает tool_calls, агент исполняет и зацикливается</comment>
+  </enumValues>
+  <enumValues uuid="bdbcc91f-4ccc-4379-b243-73b6891190b8">
+    <name>Structured</name>
+    <synonym>
+      <key>ru</key>
+      <value>Structured</value>
+    </synonym>
+    <comment>Запрос с response_format: json_schema; модель обязана вернуть JSON по схеме</comment>
+  </enumValues>
+  <enumValues uuid="bac1dfe0-d995-4784-99b3-abc49e1ffd5c">
+    <name>Streaming</name>
+    <synonym>
+      <key>ru</key>
+      <value>Streaming</value>
+    </synonym>
+    <comment>Потоковый вызов SSE, инкрементальная обработка дельт контента и tool_calls</comment>
+  </enumValues>
+</mdclass:Enum>

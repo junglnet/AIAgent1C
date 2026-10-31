@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b114930c-67dc-4b7b-8780-1e5fdf77d981">
+  <producedTypes>
+    <refType typeId="2642b81e-1d33-4fcc-af85-6e6e8320ac5a" valueTypeId="6acf3d0d-8164-4472-a649-c7c9c7a9eb7d"/>
+    <listType typeId="b882bb4e-7d4e-46bd-8845-49061f6ebb32" valueTypeId="7ec96b6c-7e70-48c4-bd2b-1efe1d1614b7"/>
+    <managerType typeId="a76cd656-9cc6-4c91-8f33-acfabcdfd90d" valueTypeId="1f90b16c-6213-414e-8500-82cb301433af"/>
+  </producedTypes>
+  <name>СИ_ТипыПодключенийMCP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы подключений MCP</value>
+  </synonym>
+  <comment>Типы транспорта подключения к MCP-серверу</comment>
+  <enumValues uuid="abe688ef-5efc-4c30-bcb1-cbeef29491c9">
+    <name>StreamableHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Streamable HTTP</value>
+    </synonym>
+    <comment>Транспорт MCP через HTTP POST (JSON-RPC), как в .roo/mcp.json</comment>
+  </enumValues>
+  <enumValues uuid="40a68fc6-3d4a-4e4c-8e11-fcd3a579fbfc">
+    <name>SSE</name>
+    <synonym>
+      <key>ru</key>
+      <value>SSE</value>
+    </synonym>
+    <comment>Транспорт MCP через Server-Sent Events (legacy)</comment>
+  </enumValues>
+</mdclass:Enum>

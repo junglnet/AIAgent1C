@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5cdc72ee-6250-41b7-9fdb-89c91ca73f93">
+  <name>СИ_ПрикрепитьФайл</name>
+  <synonym>
+    <key>ru</key>
+    <value>С и прикрепить файл</value>
+  </synonym>
+</mdclass:CommonPicture>

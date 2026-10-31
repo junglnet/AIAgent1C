@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29dd3cb2-c829-4bb8-bfd7-bdec062410e0">
+  <name>СИ_Инструменты1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Встроенные инструменты 1С</value>
+  </synonym>
+  <comment>Встроенные инструменты платформы 1С: запросы, чтение/запись объектов, проведение документов</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

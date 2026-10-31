@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6210e61a-6e10-42aa-b4bb-90af72f9a29f">
+  <producedTypes>
+    <objectType typeId="3d5eb60e-72d7-4b2f-9977-3b36364d3ae1" valueTypeId="51136428-760c-4fe9-bec1-1a70dd921846"/>
+    <refType typeId="3fe335b1-5569-44db-9b93-c6932d279345" valueTypeId="771bb654-1087-4c5b-a0e9-068f1e0d3681"/>
+    <selectionType typeId="5df64773-38d6-406f-9031-dd9c8698880f" valueTypeId="25a80df0-e512-431e-a1e5-ae0b4b415f4d"/>
+    <listType typeId="3eb91d95-0699-454e-ba85-d151cad2fc1b" valueTypeId="39916f00-71a9-4bd3-be88-3fc7dca67466"/>
+    <managerType typeId="4574d060-2b43-4048-bef1-e0849189da2a" valueTypeId="e0b7cd6b-e2f0-4c42-aae8-5704c87f618d"/>
+  </producedTypes>
+  <name>СИ_ПрофилиПодключений</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Профили подключений</value>
+  </synonym>
+  <comment>Именованные профили подключения к OpenAI-совместимому endpoint</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Профиль подключения</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Профили подключений</value>
+  </listPresentation>
+  <descriptionLength>50</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <defaultObjectForm>Catalog.СИ_ПрофилиПодключений.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СИ_ПрофилиПодключений.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="6d6eb9c7-267f-4908-91c8-c9dfa6db700b">
+    <name>DPIКонвертацииPDF</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="d4f550e4-c089-46ec-8ecb-02e031bfe9c4">
+    <name>БазовыйURL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Базовый URL</value>
+    </synonym>
+    <comment>Полный URL endpoint с версией API, например https://api.openai.com/v1</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="543686d4-82d8-4c65-9597-3ff085b950e5">
+    <name>ДвижокКонвертацииPDF</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>20</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="bacaaa88-4d49-4f74-a4f2-cbe8a20fa4f2">
+    <name>ИмяЗаголовкаАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя заголовка авторизации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По умолчанию Authorization</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="30340be5-1366-4835-a9e7-8d6ab5a66798">
+    <name>ИспользоватьПрокси</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать прокси</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="d06ee45b-ccd0-4812-bcfa-278dc255a0cc">
+    <name>ИспользоватьСводку</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать сводку</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <attributes uuid="cb37d702-4e57-4db2-91eb-c0dff7f40ba2">
+    <name>КлючAPI</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ API</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+  </attributes>
+  <attributes uuid="f3a2c1d4-5b6e-4f7a-8b9c-0d1e2f3a4b5c">
+    <name>КоличествоПовторовПриТранспортнойОшибке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество автоматических повторных попыток вызова модели при временных сбоях</value>
+    </synonym>
+    <comment>Количество автоматических повторных попыток вызова модели при временных сбоях (сеть/DNS/таймаут, HTTP 408/429/5xx). 0 — отключить автоповтор.</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="71ece566-1af4-4ec5-8162-a63f2d425366">
+    <name>КоличествоСвежихСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество свежих сообщений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="6d8662bf-0d58-47ae-96fb-7e1a2c7a048e">
+    <name>МаксДлинаToolРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс длина результата инструмента</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="bf0bbf4b-ad40-43ac-8c3d-501734aa5716">
+    <name>МаксДлинаСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс длина сообщения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="abbdf08c-97d2-422e-97d5-f70986ac01eb">
+    <name>МаксимумИтераций</name>
+    <synonym>
+      <key>ru</key>
+      <value>Максимум итераций</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Лимит цикла tool-calling</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="3714d433-6b6d-435b-9aa1-4fae5a421477">
+    <name>МаксимумСтраницPDF</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="84444388-4ff0-4cac-84f5-16d7b4c248f7">
+    <name>МаксТокеновСводки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макс токенов сводки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="6a0c13c4-ed55-4104-82bb-3060e419dfe8">
+    <name>ПроверятьSSL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверять SSL</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Для локальных endpoint можно Ложь</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="f4ea6d3f-4348-4f0a-bb3f-4ea5050bc21e">
+    <name>ПроксиПароль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси пароль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="8d27a85f-e2e3-44ce-beb3-0d89a8c8545a">
+    <name>ПроксиПользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси пользователь</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="81a451d7-d76a-4984-a4ad-0279599cfeed">
+    <name>ПроксиПорт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси порт</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="2c125e0f-1374-470c-b888-d87cf9fb0edd">
+    <name>ПроксиСервер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прокси сервер</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="df409102-3baa-4e33-92bd-435552cff774">
+    <name>ПроцентОкнаДляИстории</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процент окна для истории</value>
+    </synonym>
+    <comment>Доля контекстного окна модели, отводимая под историю диалога (0.75 = 75%). При превышении запускается сжатие.</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="59f24407-79f9-41a8-b45a-9d1bf1f23ae8">
+    <name>ПутьКУтилитеКонвертацииPDF</name>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="8a1b2c3d-4e5f-4a6b-8c9d-0e1f2a3b4c5d">
+    <name>РазрешитьРассуждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разрешить рассуждения (reasoning)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Включать рассуждения модели. Если выключено — рассуждения не генерируются (быстрее) и не показываются в чате. Авто-отключение на финальной итерации после вызова инструмента.</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="d60dd360-0bf0-40c4-9890-2d90ffd9c397">
+    <name>Таймаут</name>
+    <synonym>
+      <key>ru</key>
+      <value>Таймаут</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Секунды</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="13eb32a7-67c1-421f-a60e-6c1c29e721a5">
+    <name>ТипАвторизации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип авторизации</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_ТипыАвторизации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Bearer / КлючВЗаголовке / КлючВURL / Нет</value>
+    </toolTip>
+  </attributes>
+  <attributes uuid="c804c162-4943-46ab-9f30-0b3dbe21f750">
+    <name>ЗаголовокЧерезИИ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Заголовок диалога через ИИ</value>
+    </synonym>
+    <comment>Способ автозаголовка нового диалога: Ложь (по умолчанию) — заголовок формируется из текста первого сообщения пользователя без вызова ИИ; Истина — прежний вариант с одним дешевым вызовом модели.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <tabularSections uuid="cf7f8a79-38a3-4354-a333-2c2c99b39785">
+    <producedTypes>
+      <objectType typeId="ae6b4c26-bed5-4f9b-a6bf-158b3d1ddc6f" valueTypeId="3bae19e7-9fef-40b2-b6c7-5d1502f31319"/>
+      <rowType typeId="286c939c-9f2c-46fb-8b6a-4e99ad4c233e" valueTypeId="9e251ae5-94d9-45cb-ab8e-d380908f2f5c"/>
+    </producedTypes>
+    <name>Модели</name>
+    <attributes uuid="4c9f3337-9faa-47fd-a4de-92d004508b05">
+      <name>ИмяМодели</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя модели</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="0b2564ae-cee7-4139-8ab1-fc989e339383">
+      <name>КонтекстноеОкно</name>
+      <synonym>
+        <key>ru</key>
+        <value>Контекстное окно</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+    <attributes uuid="6239354f-d40e-4128-b3fa-d61385353b1e">
+      <name>МаксимумТокеновОтвета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Максимум токенов ответа</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+    </attributes>
+    <attributes uuid="523eceda-c0cd-4611-8c43-0f57c119ce2e">
+      <name>ПоддержкаИзображений</name>
+      <synonym>
+        <key>ru</key>
+        <value>Поддержка изображений</value>
+      </synonym>
+      <comment>Модель поддерживает передачу изображений (image_url / vision).</comment>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </attributes>
+    <attributes uuid="15bd2d72-4b6e-4ffb-b5c6-7237997877ba">
+      <name>ИспользоватьПоУмолчанию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Использовать по умолчанию</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+    </attributes>
+  </tabularSections>
+  <forms uuid="14680ef9-df60-4e3d-9dab-1c56713386f1">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="248040b4-079b-4ae5-bd52-bd404cf3e43d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

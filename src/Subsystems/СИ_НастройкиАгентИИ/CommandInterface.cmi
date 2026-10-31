@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsPlacement>
+    <placementFragments>
+      <group>NavigationPanelSeeAlso</group>
+      <commands>InformationRegister.СИ_СообщенияДиалога.StandardCommand.OpenList</commands>
+    </placementFragments>
+    <placementFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Catalog.СИ_ПрофилиПодключений.StandardCommand.OpenList</commands>
+      <commands>Catalog.СИ_ИнструментыАгента.StandardCommand.OpenList</commands>
+      <commands>CommonCommand.СИ_ОткрытьНастройкиЧатАгента</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelSeeAlso</group>
+      <commands>InformationRegister.СИ_СообщенияДиалога.StandardCommand.OpenList</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Catalog.СИ_ПрофилиПодключений.StandardCommand.OpenList</commands>
+      <commands>Catalog.СИ_ИнструментыАгента.StandardCommand.OpenList</commands>
+      <commands>CommonCommand.СИ_ОткрытьНастройкиЧатАгента</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>Constant.СИ_АктивныйПрофиль.StandardCommand.Open</commands>
+      <commands>DataProcessor.СИ_ЧатАгента.StandardCommand.Open</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

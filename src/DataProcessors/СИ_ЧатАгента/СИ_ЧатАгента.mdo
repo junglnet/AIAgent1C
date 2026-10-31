@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5207d9d6-511d-4e34-aaaf-d277e1a577bb">
+  <producedTypes>
+    <objectType typeId="e80bb7f3-52f7-4b67-984f-01ba8c217318" valueTypeId="1338ad29-b72e-448c-80a0-b2db59a6ffbb"/>
+    <managerType typeId="0876bb14-79f6-4e6c-812a-403eb71a0d56" valueTypeId="773a2bdf-e342-4a85-95c7-c69b05c0d83a"/>
+  </producedTypes>
+  <name>СИ_ЧатАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат с агентом ИИ</value>
+  </synonym>
+  <comment>Интерактивный чат для взаимодействия с AI-агентом</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СИ_ЧатАгента.Form.ФормаЧата</defaultForm>
+  <extendedPresentation>
+    <key>ru</key>
+    <value>Чат с агентом ИИ</value>
+  </extendedPresentation>
+  <forms uuid="32c6c5a8-251f-4330-ac52-d5eabff736ec">
+    <name>ФормаЧата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма чата с агентом</value>
+    </synonym>
+    <comment>Основная форма интерактивного чата с AI-агентом</comment>
+  </forms>
+  <forms uuid="5cedabdb-844f-4012-bd6a-9043d4ca8eca">
+    <name>ФормаНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройки агента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

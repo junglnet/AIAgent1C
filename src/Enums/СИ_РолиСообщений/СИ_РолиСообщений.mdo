@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="70fec3aa-8399-40a6-be9e-d82ce07d8c2b">
+  <producedTypes>
+    <refType typeId="39b7cdaf-ebe1-4a0c-9bc9-31fbc0121efa" valueTypeId="ba4da542-151b-40a7-9928-c2d61eee89d9"/>
+    <listType typeId="0587b5ec-625e-4136-b1b7-e0b6608c008f" valueTypeId="527d5d98-4b62-4ad1-8a67-b97718c506b2"/>
+    <managerType typeId="afd9e775-0fbb-4d2e-9502-42cec49860b2" valueTypeId="a67dca97-41a5-4a68-99ae-760895906c9a"/>
+  </producedTypes>
+  <name>СИ_РолиСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли сообщений</value>
+  </synonym>
+  <comment>Роли сообщений: System / User / Assistant / Tool / Служебное</comment>
+  <enumValues uuid="c762d3c0-2b5e-4c4e-a678-f6b9f13d7de2">
+    <name>System</name>
+    <synonym>
+      <key>ru</key>
+      <value>System</value>
+    </synonym>
+    <comment>Системное сообщение (системный промпт)</comment>
+  </enumValues>
+  <enumValues uuid="b729e6f3-70ab-492f-92cf-19a6ab9abd37">
+    <name>User</name>
+    <synonym>
+      <key>ru</key>
+      <value>User</value>
+    </synonym>
+    <comment>Сообщение пользователя</comment>
+  </enumValues>
+  <enumValues uuid="f6b077ae-fc71-4874-9973-3ddaf56efbff">
+    <name>Assistant</name>
+    <synonym>
+      <key>ru</key>
+      <value>Assistant</value>
+    </synonym>
+    <comment>Сообщение модели (ассистента)</comment>
+  </enumValues>
+  <enumValues uuid="f38f666f-fb78-4593-ae12-8cd6c745e5cf">
+    <name>Tool</name>
+    <synonym>
+      <key>ru</key>
+      <value>Tool</value>
+    </synonym>
+    <comment>Результат исполнения инструмента (role=tool)</comment>
+  </enumValues>
+  <enumValues uuid="d8931368-6ca3-45f7-914f-40a42ae92969">
+    <name>Служебное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Служебное</value>
+    </synonym>
+    <comment>Служебное сообщение агента: видно пользователю, в контекст модели не передается</comment>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ee1ddd49-ba97-4e38-befb-b53715cc052f">
+  <producedTypes>
+    <refType typeId="c217a37e-1e88-495b-855c-2072003897a0" valueTypeId="82faabeb-399a-43b8-807b-c83a7e87d364"/>
+    <listType typeId="6aa9b355-48e6-4199-bb4c-9e784ce29005" valueTypeId="9c5d5659-de7a-486b-8d2a-fdef24f6d2c2"/>
+    <managerType typeId="bf8ab3b9-f31c-4280-a12f-96dd76d3ae8c" valueTypeId="b195019f-8f4e-45d4-b955-bf5159eb45ad"/>
+  </producedTypes>
+  <name>СИ_ПричиныЗавершения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Причины завершения</value>
+  </synonym>
+  <comment>Причины завершения: Stop / ToolCalls / Length / ContentFilter</comment>
+  <enumValues uuid="e43d3c8b-e49f-4feb-b488-4e0d7c573f9b">
+    <name>Stop</name>
+    <synonym>
+      <key>ru</key>
+      <value>Stop</value>
+    </synonym>
+    <comment>Модель завершила ответ естественным образом (finish_reason=stop)</comment>
+  </enumValues>
+  <enumValues uuid="8263145f-fa44-447b-a002-41f052b5ae55">
+    <name>ToolCalls</name>
+    <synonym>
+      <key>ru</key>
+      <value>Tool Calls</value>
+    </synonym>
+    <comment>Модель запросила вызов инструментов (finish_reason=tool_calls)</comment>
+  </enumValues>
+  <enumValues uuid="f71dff0c-3314-4c41-a292-23af1e0f9ae0">
+    <name>Length</name>
+    <synonym>
+      <key>ru</key>
+      <value>Length</value>
+    </synonym>
+    <comment>Достигнут max_tokens (finish_reason=length)</comment>
+  </enumValues>
+  <enumValues uuid="ebbaa75c-98c0-4fad-a996-9426f62183e0">
+    <name>ContentFilter</name>
+    <synonym>
+      <key>ru</key>
+      <value>Content Filter</value>
+    </synonym>
+    <comment>Ответ отфильтрован модерацией (finish_reason=content_filter)</comment>
+  </enumValues>
+</mdclass:Enum>

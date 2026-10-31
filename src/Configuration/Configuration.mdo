@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="e2d2a56f-0569-4362-83b1-22461068214d">
+  <name>AIAgent1C</name>
+  <synonym>
+    <key>ru</key>
+    <value>AIAgent1 C</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <defaultRunMode>Checked</defaultRunMode>
+    <defaultLanguage>Checked</defaultLanguage>
+  </extension>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="ed4aa5f6-539a-4f28-8d4d-5ca0aca3745d"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="f3c9fab9-e786-495b-aa28-04a6f8e13f2c"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="e8708d4d-e9d8-49ae-8095-f124983ec554"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="ed6d533b-21ed-4741-a648-5fec371d2946"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="20a5a404-4598-4991-9f32-37a1345bff48"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="402f2eeb-2d63-4b24-bb65-0e3e13849214"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="ddef0716-8732-4cdb-be37-7d3ae08b9347"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>СИ_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.5.1</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>StrongOWL inc</vendor>
+  <version>1.0.0.1</version>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <languages uuid="c1110bfd-3028-4a16-9bea-720aba248a68">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Notify</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.СИ_НастройкиАгентИИ</subsystems>
+  <subsystems>Subsystem.СИ_ЧатАгента</subsystems>
+  <commonPictures>CommonPicture.СИ_Диалог</commonPictures>
+  <commonPictures>CommonPicture.СИ_НовыйЧат</commonPictures>
+  <commonPictures>CommonPicture.СИ_ОстановитьЧат</commonPictures>
+  <commonPictures>CommonPicture.СИ_Отправить</commonPictures>
+  <commonPictures>CommonPicture.СИ_ОчиститьПамять</commonPictures>
+  <commonPictures>CommonPicture.СИ_ПрикрепитьФайл</commonPictures>
+  <commonPictures>CommonPicture.СИ_РазделЧатАгента</commonPictures>
+  <commonPictures>CommonPicture.СИ_СжатьДиалог</commonPictures>
+  <commonPictures>CommonPicture.СИ_УдалитьЧат</commonPictures>
+  <roles>Role.СИ_АдминистрированиеЧатАгента</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_MCPСерверы</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_АктивныйРежим</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_ДиалогиАгента</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_ЗапрещенныеОбъектыЗапросов</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_ИнструментыАгента</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_ПамятьДиалога</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_РежимиРаботы</roles>
+  <roles>Role.СИ_ДобавлениеИзменениеСИ_СообщенияДиалога</roles>
+  <roles>Role.СИ_ИспользованиеСИ_ЧатАгента</roles>
+  <roles>Role.СИ_ПодсистемаСИ_АгентИИ</roles>
+  <roles>Role.СИ_ЧтениеСИ_MCPСерверы</roles>
+  <roles>Role.СИ_ЧтениеСИ_АктивныйРежим</roles>
+  <roles>Role.СИ_ЧтениеСИ_ДиалогиАгента</roles>
+  <roles>Role.СИ_ЧтениеСИ_ЗапрещенныеОбъектыЗапросов</roles>
+  <roles>Role.СИ_ЧтениеСИ_ИнструментыАгента</roles>
+  <roles>Role.СИ_ЧтениеСИ_ПамятьДиалога</roles>
+  <roles>Role.СИ_ЧтениеСИ_ПрофилиПодключений</roles>
+  <roles>Role.СИ_ЧтениеСИ_РежимиРаботы</roles>
+  <roles>Role.СИ_ЧтениеСИ_СообщенияДиалога</roles>
+  <commonModules>CommonModule.СИ_Агент1С</commonModules>
+  <commonModules>CommonModule.СИ_Инструменты1С</commonModules>
+  <commonModules>CommonModule.СИ_МаркдаунHTML</commonModules>
+  <commonModules>CommonModule.СИ_НастройкиАгента</commonModules>
+  <commonModules>CommonModule.СИ_ОpenAIКлиент</commonModules>
+  <commonModules>CommonModule.СИ_ОбслуживаниеАгента</commonModules>
+  <commonModules>CommonModule.СИ_ПамятьДиалога</commonModules>
+  <commonModules>CommonModule.СИ_Промпты</commonModules>
+  <commonModules>CommonModule.СИ_РаботаСJSON</commonModules>
+  <commonModules>CommonModule.СИ_РаспознованиеИзображений</commonModules>
+  <commonModules>CommonModule.СИ_УправлениеДиалогом</commonModules>
+  <commonModules>CommonModule.СИ_УправлениеИнструментами1С</commonModules>
+  <commonModules>CommonModule.СИ_УправлениеИнструментамиMCP</commonModules>
+  <commonModules>CommonModule.СИ_ФайлыДиалога</commonModules>
+  <commonModules>CommonModule.СИ_ЧатHTMLСервер</commonModules>
+  <commonModules>CommonModule.СИ_ЭмодзиHTMLКлиентСервер</commonModules>
+  <scheduledJobs>ScheduledJob.СИ_ОбслуживаниеАгента</scheduledJobs>
+  <commonCommands>CommonCommand.СИ_ОткрытьНастройкиЧатАгента</commonCommands>
+  <constants>Constant.СИ_АктивныйРежим</constants>
+  <constants>Constant.СИ_ЗапрещенныеОбъектыЗапросов</constants>
+  <constants>Constant.СИ_ЛимитТокеновНаОтвет</constants>
+  <catalogs>Catalog.СИ_MCPСерверы</catalogs>
+  <catalogs>Catalog.СИ_ДиалогиАгента</catalogs>
+  <catalogs>Catalog.СИ_ДиалогиАгентаПрисоединенныеФайлы</catalogs>
+  <catalogs>Catalog.СИ_ИнструментыАгента</catalogs>
+  <catalogs>Catalog.СИ_ПрофилиПодключений</catalogs>
+  <catalogs>Catalog.СИ_РежимиРаботы</catalogs>
+  <enums>Enum.СИ_ПричиныЗавершения</enums>
+  <enums>Enum.СИ_РежимыРаботыАгента</enums>
+  <enums>Enum.СИ_РолиСообщений</enums>
+  <enums>Enum.СИ_СтатусыДиалога</enums>
+  <enums>Enum.СИ_ТипыАвторизации</enums>
+  <enums>Enum.СИ_ТипыИнструментов</enums>
+  <enums>Enum.СИ_ТипыПодключенийMCP</enums>
+  <dataProcessors>DataProcessor.СИ_ЧатАгента</dataProcessors>
+  <informationRegisters>InformationRegister.СИ_ОжидающиеРазрешения</informationRegisters>
+  <informationRegisters>InformationRegister.СИ_ПамятьДиалога</informationRegisters>
+  <informationRegisters>InformationRegister.СИ_РазрешенияИнструментовДиалога</informationRegisters>
+  <informationRegisters>InformationRegister.СИ_СообщенияДиалога</informationRegisters>
+</mdclass:Configuration>

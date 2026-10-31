@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5227f6a4-479f-45d5-9658-b19b7f589e5d">
+  <name>СИ_ЧтениеСИ_АктивныйРежим</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Чтение СИ_АктивныйРежим</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5ab15e76-c837-4de9-ae2b-9b42ff94addf">
+  <name>СИ_УправлениеИнструментамиMCP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инструменты MCP</value>
+  </synonym>
+  <comment>Клиент MCP: JSON-RPC (initialize, tools/list, tools/call), проверка подключения, загрузка инструментов</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

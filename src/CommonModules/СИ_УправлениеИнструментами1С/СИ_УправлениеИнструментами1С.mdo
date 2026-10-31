@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e83324c8-6df9-4f18-9f82-67e06073202b">
+  <name>СИ_УправлениеИнструментами1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Реестр инструментов</value>
+  </synonym>
+  <comment>Единый реестр инструментов: регистрация, хранение, диспетчеризация вызовов</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

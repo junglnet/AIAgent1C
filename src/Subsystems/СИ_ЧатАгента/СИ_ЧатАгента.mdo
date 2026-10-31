@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2282fccd-8f82-48e7-8f57-dd37a00dbbd3">
+  <name>СИ_ЧатАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат с AI</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <useOneCommand>true</useOneCommand>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.СИ_РазделЧатАгента</picture>
+  </picture>
+  <content>DataProcessor.СИ_ЧатАгента</content>
+</mdclass:Subsystem>

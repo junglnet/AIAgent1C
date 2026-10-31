@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ac8d6b2c-3908-4c50-ad35-6bfcfc68b74a">
+  <producedTypes>
+    <objectType typeId="a1dffd26-655a-4086-bf52-cf17bb369483" valueTypeId="5b1e4982-7080-4f3c-9591-75635b65f1c5"/>
+    <refType typeId="3e6ed591-00b4-45dd-bc92-27daed6b48c9" valueTypeId="951a5740-d1ef-452f-81fd-5b8961208f8d"/>
+    <selectionType typeId="b2721c6c-df01-4df2-b4b1-c9d39b2fae69" valueTypeId="655f5f75-4111-4952-b792-fab50a772640"/>
+    <listType typeId="f4a7448f-77d3-47d5-8890-671c9d209a9d" valueTypeId="1b407c82-c5a5-4ebf-b24d-0b405ababc73"/>
+    <managerType typeId="72aa732d-90e2-43f4-886d-cbd2cadf7ac1" valueTypeId="dd33ead1-fb50-48d8-86dd-24a7dcbf460e"/>
+  </producedTypes>
+  <name>СИ_РежимиРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Режимы работы</value>
+  </synonym>
+  <comment>Справочник режимов работы AI-агента: тип режима и системный промпт</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Режим работ</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Режим работ</value>
+  </listPresentation>
+  <descriptionLength>50</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СИ_РежимиРаботы.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СИ_РежимиРаботы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="a786ab86-3d0a-4ac0-9636-ea1808fbcaa4">
+    <name>ТипРежима</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип режима</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_РежимыРаботыАгента</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="d3f8b6e2-9a5c-4b7d-8e1f-6c3d2a9b5e7f">
+    <name>СистемныйПромпт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Системный промпт</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="9dcf7144-8dc6-4944-aba8-486c8e90e8b9">
+    <name>ИспользоватьВСпискеЧатов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать в списке чатов</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1e3a3821-32c6-4856-a5d5-cd7bfdfd9e34">
+    <name>Профиль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль подключения</value>
+    </synonym>
+    <comment>Профиль подключения, используемый в этом режиме работы</comment>
+    <type>
+      <types>CatalogRef.СИ_ПрофилиПодключений</types>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="48a6a325-63bd-4ed9-81b5-27ba21996cc2">
+    <name>Модель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель</value>
+    </synonym>
+    <comment>Название модели, которая будет использована для этого режима</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="f17e9826-392f-47b0-8181-a028c67f6f05">
+    <name>ПрофильРаспознованияКартинок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль для распознавания</value>
+    </synonym>
+    <comment>Если заполнен — URL, ключ, версия API, авторизация и прокси для vision берутся из этого профиля, иначе — из основного Профиль. Оба поля необязательны; если пусто — отдельное vision не используется.</comment>
+    <type>
+      <types>CatalogRef.СИ_ПрофилиПодключений</types>
+    </type>
+  </attributes>
+  <attributes uuid="6dcf9605-f631-4b09-885f-02f8baf7efca">
+    <name>МодельРаспознованияКартинок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель распознавания картинок</value>
+    </synonym>
+    <comment>Имя vision-модели для распознавания картинок/PDF. Если пусто — отдельное vision не используется, картинки передаются image_url в основной запрос.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="03f37507-d224-4f70-977e-907ab8d6442b">
+    <name>Температура</name>
+    <synonym>
+      <key>ru</key>
+      <value>Температура</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="35825e0b-8b5a-4777-99aa-9e3116da46fd">
+    <name>Подсказки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсказки стартового экрана</value>
+    </synonym>
+    <comment>Многострочный строковый реквизит: каждая строка — отдельная подсказка-кнопка стартового экрана. Вопрос «Что ты умеешь?» жестко зашит в коде и сюда не попадает.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>1024</length>
+      </stringQualifiers>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="c2465045-109a-4bf5-b63f-ae18331787a0">
+    <producedTypes>
+      <objectType typeId="e40c1bc9-0448-4a0e-8c38-ab177d387f8d" valueTypeId="b0a18547-0826-468a-b033-36aae1acc6d7"/>
+      <rowType typeId="0ccb3c10-c010-4ac3-bf2f-e6641298897d" valueTypeId="8163c3cf-86fb-49bb-b9d1-49457d0a84da"/>
+    </producedTypes>
+    <name>ДоступныеПользователи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступные пользователи</value>
+    </synonym>
+    <attributes uuid="d7232780-a490-464a-ab1e-b2383ee28b9a">
+      <name>Пользователь</name>
+      <synonym>
+        <key>ru</key>
+        <value>Пользователь</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <fillChecking>ShowError</fillChecking>
+    </attributes>
+  </tabularSections>
+  <forms uuid="c2af77bf-5292-4669-85ef-a20e28e2e357">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+  </forms>
+  <forms uuid="2599ea3b-9481-4b80-ba75-d651cf23c5fe">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+  </forms>
+</mdclass:Catalog>

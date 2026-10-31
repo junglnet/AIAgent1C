@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e77c1098-fd5f-46b9-a9a4-720dc1fcded7">
+  <name>СИ_ОбслуживаниеАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Обслуживание агента</value>
+  </synonym>
+  <comment>TTL памяти диалога, зависшие заходы (СИ_ОбслуживаниеАгента.ВыполнитьОбслуживание)</comment>
+  <methodName>CommonModule.СИ_ОбслуживаниеАгента.ВыполнитьОбслуживание</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

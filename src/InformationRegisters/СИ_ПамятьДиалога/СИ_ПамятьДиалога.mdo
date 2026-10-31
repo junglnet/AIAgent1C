@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8767b55-fe15-48fb-af6f-19b7083556e0">
+  <producedTypes>
+    <selectionType typeId="9a7de001-2c26-4bd9-bbbb-92bfd096014f" valueTypeId="2ced2169-7fa9-4e7b-8c74-abc08f11f636"/>
+    <listType typeId="4b43ead2-baf5-430d-a436-5f2e64a0cd60" valueTypeId="fb243953-2c6b-4363-b821-92dae3036cd2"/>
+    <managerType typeId="64fa1069-1ca8-4005-95f6-7796261a6677" valueTypeId="79b9744f-84b4-4ae4-9ab0-7d9f9848e116"/>
+    <recordSetType typeId="afba69c0-0207-42ff-bc23-6c4ec43b5b10" valueTypeId="3f943dd2-0978-49f3-afe6-50665c00aba0"/>
+    <recordKeyType typeId="b95c7aea-7d8c-40f9-9adc-c788ccd80c8a" valueTypeId="2859d93e-262e-457f-a9b5-23a75dd4ec33"/>
+    <recordType typeId="0f8b15f7-0a20-489b-a231-0db36616dba8" valueTypeId="354a6a88-8714-4e30-9a04-d02e0f56e825"/>
+    <recordManagerType typeId="75659cee-8840-47d2-a840-01387689ea35" valueTypeId="fe0f0eba-4925-450a-bb93-c42408536526"/>
+  </producedTypes>
+  <name>СИ_ПамятьДиалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Память диалога</value>
+  </synonym>
+  <comment>Контекстная память диалогов агента (непериодический, независимый)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Память диалога</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Память диалога</value>
+  </listPresentation>
+  <resources uuid="ba9a22f5-a42b-40bd-bfb3-623651473891">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <resources uuid="d8d62478-0d28-4ab9-900b-e1fd3ecebb2e">
+    <name>Сортировка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приоритет</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </resources>
+  <attributes uuid="a1a19a96-d411-4a36-a969-4c82af40b652">
+    <name>ДатаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="cc025229-97ae-44f3-9f44-a7ed78dd68d1">
+    <name>АктуальноДо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Актуально до</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="ca1e9148-562d-4cba-9bba-0e27fc00cd9e">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник факта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="7b8e7af7-2af5-4ec0-b5b9-bdd709c3aaaa">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+  </attributes>
+  <dimensions uuid="991cf732-2e46-480f-85b7-3d5d48c7af72">
+    <name>ИдДиалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Диалог</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_ДиалогиАгента</types>
+    </type>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="85b6be06-0b30-4620-8b8e-7f99cdf3af87">
+    <name>ТипФакта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип факта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+  </dimensions>
+  <dimensions uuid="40bfc0f8-bea1-4765-8b7e-9ca2a4ec7083">
+    <name>Ключ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ факта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+  </dimensions>
+</mdclass:InformationRegister>

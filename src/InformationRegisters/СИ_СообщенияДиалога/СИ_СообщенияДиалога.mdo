@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50850e2a-ede5-4028-9e6a-b1073cf19bba">
+  <producedTypes>
+    <selectionType typeId="5460d772-95c4-4694-9384-1e334f0c9e1a" valueTypeId="06d5a409-168c-49b8-8b7d-0fa62fa57b99"/>
+    <listType typeId="3889e020-50ea-4fdb-b93f-a9fd14973114" valueTypeId="13fd6fd5-fe52-450d-a5f5-02fbb1451cd8"/>
+    <managerType typeId="d5fcbe52-32e8-482c-9989-6ad2601f7065" valueTypeId="49e5b90a-75ce-48c5-9ed4-a0b7a323feff"/>
+    <recordSetType typeId="9265fcdf-89ea-4fc4-82e4-1d01d6bd4e19" valueTypeId="ea35760f-4580-46a4-a57b-e3649816f26f"/>
+    <recordKeyType typeId="886a3f68-07d0-43cc-96b1-c855bac0acb7" valueTypeId="3164791d-d189-4d25-954d-cfa6963b4450"/>
+    <recordType typeId="d91e4266-4dda-4b7c-b4e5-b7e8df7d22b1" valueTypeId="88420ff6-0390-4969-b9bc-d3f8a4c8d27c"/>
+    <recordManagerType typeId="b473b2e5-9a0e-4e33-84e8-5692aaad6b27" valueTypeId="a01bb8f7-b9ca-4d2c-ac59-5eefb97c8c5e"/>
+  </producedTypes>
+  <name>СИ_СообщенияДиалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Сообщения диалога</value>
+  </synonym>
+  <comment>История сообщений диалога (непериодический, независимый)</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Сообщение диалога</value>
+  </recordPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Сообщения диалога</value>
+  </listPresentation>
+  <resources uuid="b0fbb411-8a38-44af-9abf-4795fc5d37b8">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_РолиСообщений</types>
+    </type>
+  </resources>
+  <resources uuid="2031cadd-ee2b-4e42-aefc-6b413eb38e26">
+    <name>Контент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Контент</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <resources uuid="c2a396d9-d88e-4949-a404-6254a925cdad">
+    <name>ВызовыИнструментовJSON</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вызовы инструментов (JSON)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <resources uuid="0585687f-27df-4a98-8415-7d5f22dda1d5">
+    <name>ИдВызоваИнструмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ид вызова инструмента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </resources>
+  <resources uuid="5a57c4f9-fd13-4d49-ac9d-6eaf453d7cbc">
+    <name>ИмяИнструмента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя инструмента</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </resources>
+  <resources uuid="217f64eb-8cd2-472b-a36a-70f549cd931e">
+    <name>МетаданныеСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метаданные сообщения</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+  </resources>
+  <resources uuid="9d4e1f2a-3b5c-4d6e-8f7a-0b1c2d3e4f5a">
+    <name>Рассуждения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Рассуждения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </resources>
+  <attributes uuid="c7589d19-c4f6-448c-9b69-1eafef79327e">
+    <name>ДатаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата записи</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <dimensions uuid="8e75a0bd-b687-4f49-822d-edfc88822193">
+    <name>ИдДиалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ид диалога</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_ДиалогиАгента</types>
+    </type>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a31bd0fe-70c0-4417-9c5a-08d7a747b1bb">
+    <name>НомерСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер сообщения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+  </dimensions>
+</mdclass:InformationRegister>

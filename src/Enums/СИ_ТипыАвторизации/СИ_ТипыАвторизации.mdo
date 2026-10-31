@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06610f2c-7682-4316-994b-0d1d00b0a5ea">
+  <producedTypes>
+    <refType typeId="725faad1-4202-4f7a-b770-6fa4fd8074ac" valueTypeId="3e2c3e06-473f-4071-8076-bf6865b4e3a9"/>
+    <listType typeId="c7861a07-b440-462a-b930-43399df55525" valueTypeId="5f74cc30-a180-4d6b-8b5b-579493d2b2c3"/>
+    <managerType typeId="827bc882-cfe3-4cd7-ba4a-4c9b9e434143" valueTypeId="429ed511-01e0-4c74-8314-774b95721291"/>
+  </producedTypes>
+  <name>СИ_ТипыАвторизации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы авторизации</value>
+  </synonym>
+  <comment>Типы авторизации: Bearer / КлючВЗаголовке / КлючВURL / Нет</comment>
+  <enumValues uuid="332df4d3-3558-46fd-8898-e3eb06e5b7a2">
+    <name>Bearer</name>
+    <synonym>
+      <key>ru</key>
+      <value>Bearer</value>
+    </synonym>
+    <comment>Стандартная Bearer-авторизация: заголовок Authorization: Bearer &lt;ключ></comment>
+  </enumValues>
+  <enumValues uuid="1834ab33-ce85-4fbd-b151-db901f595e31">
+    <name>КлючВЗаголовке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ в заголовке</value>
+    </synonym>
+    <comment>Ключ в произвольном заголовке (имя задаётся в ИмяЗаголовкаАвторизации)</comment>
+  </enumValues>
+  <enumValues uuid="adf1c2ec-7d3c-4f1b-9b2f-aaf1db988b15">
+    <name>КлючВURL</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ключ в URL</value>
+    </synonym>
+    <comment>Ключ как query-параметр URL</comment>
+  </enumValues>
+  <enumValues uuid="abd173c7-5295-4a80-82f0-85d07f291325">
+    <name>Нет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нет</value>
+    </synonym>
+    <comment>Без авторизации (локальные endpoint, например Ollama)</comment>
+  </enumValues>
+</mdclass:Enum>

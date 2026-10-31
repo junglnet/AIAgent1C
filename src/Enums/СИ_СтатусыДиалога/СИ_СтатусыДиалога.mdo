@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b1d20bb-b832-4da8-bc11-d919a603078e">
+  <producedTypes>
+    <refType typeId="b1673928-7b69-4f33-b89b-2fcbd9133039" valueTypeId="c2e5cac6-298f-40e9-a4db-e634f2380ff8"/>
+    <listType typeId="00b8b18e-0b66-47ef-93db-7f3613c4afb4" valueTypeId="d83a7b92-c62c-43a3-ba01-d98e0ee92909"/>
+    <managerType typeId="ab5fe894-59f1-41fa-8bd1-af91bfdf2c40" valueTypeId="67ba270b-52ee-4217-a46b-f28fccd6242f"/>
+  </producedTypes>
+  <name>СИ_СтатусыДиалога</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы диалога</value>
+  </synonym>
+  <comment>Статусы диалога: Активен / Завершён / ПрерванОшибкой / ПревышенЛимит</comment>
+  <enumValues uuid="d6849646-450d-44b6-8db8-3451e0afb5f3">
+    <name>Активен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активен</value>
+    </synonym>
+    <comment>Диалог в работе, ожидается следующий шаг</comment>
+  </enumValues>
+  <enumValues uuid="4456f96c-6aa5-4993-b5e5-c3bae44e232d">
+    <name>Завершён</name>
+    <synonym>
+      <key>ru</key>
+      <value>Завершён</value>
+    </synonym>
+    <comment>Получен терминальный ответ (finish_reason=stop или length)</comment>
+  </enumValues>
+  <enumValues uuid="3508bdc5-8443-450f-8c4d-b850dfda34de">
+    <name>ПрерванОшибкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прерван ошибкой</value>
+    </synonym>
+    <comment>Прерван из-за ошибки (HTTP/API/инструмента), текст в ОшибкаЗавершения</comment>
+  </enumValues>
+  <enumValues uuid="4c3c3ede-ce6b-4dc9-95ec-b79c2c848e2f">
+    <name>ПревышенЛимит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Превышен лимит</value>
+    </synonym>
+    <comment>Превышен МаксимумИтераций или иной лимит, цикл прерван принудительно</comment>
+  </enumValues>
+  <enumValues uuid="04cd4bf7-68b7-41ab-98b3-2e3e08e7e355">
+    <name>ОжидаетРазрешения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ожидает разрешения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

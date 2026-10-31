@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d401bbce-dd1e-457e-9769-e3700ccf4611">
+  <producedTypes>
+    <managerType typeId="74114cf4-2c7c-4011-ab45-86c5b2df6be8" valueTypeId="761e6256-ef63-4340-862b-b6754284a6b4"/>
+    <valueManagerType typeId="0f5dca3d-7a2a-4e92-a301-87bee5848923" valueTypeId="a243eb00-448c-4a10-9309-d935d3cc30d3"/>
+    <valueKeyType typeId="ed92bd22-9fb5-45dc-ac48-3a098833055b" valueTypeId="6f2a304a-a2ee-4ac0-90ec-c26dbc45dc13"/>
+  </producedTypes>
+  <name>СИ_ЛимитТокеновНаОтвет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Лимит токенов на один ответ</value>
+  </synonym>
+  <comment>Предохранитель: максимальный расход токенов на одно фоновое задание (один ответ на одно сообщение). 0 = использовать значение по умолчанию 1 000 000.</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+    </numberQualifiers>
+  </type>
+</mdclass:Constant>

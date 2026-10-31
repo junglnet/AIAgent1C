@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1c01c6d-2901-4e9b-bdbc-f28233d6d9f5">
+  <name>СИ_ЧатHTMLСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чат: блоки HTML (сервер)</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

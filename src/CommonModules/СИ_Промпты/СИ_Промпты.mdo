@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5c10a70-14b5-4674-86a3-c269716eb6ef">
+  <name>СИ_Промпты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Системные промпты</value>
+  </synonym>
+  <comment>Единый источник общих системных правил, добавляемых к системному промпту агента</comment>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+  <returnValuesReuse>DuringSession</returnValuesReuse>
+</mdclass:CommonModule>

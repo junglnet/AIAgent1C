@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="409625c6-b44e-498d-ac07-42c0d716f7e3">
+  <producedTypes>
+    <objectType typeId="077ba996-fde2-49b9-80f3-7103e805436c" valueTypeId="f868a52f-66fc-4dd9-a502-9b06eefb05fd"/>
+    <refType typeId="430a1b9e-b9c9-4823-9c8c-7d83eb5aaf2f" valueTypeId="3267af39-3645-4af1-9a00-a1f99c7b7d72"/>
+    <selectionType typeId="4115b84a-05b6-45ba-bc93-31493ce096ba" valueTypeId="8c84933d-070f-4153-879c-38aa117a3b48"/>
+    <listType typeId="e50e8e2d-5257-4469-8315-2a01e08d5b74" valueTypeId="096d0364-6a23-4c53-841b-91ebe0cd8c2f"/>
+    <managerType typeId="bb87962a-3b13-4527-8d05-5ade62133a35" valueTypeId="1257c459-def8-4047-98c9-c598b1c47433"/>
+  </producedTypes>
+  <name>СИ_ДиалогиАгента</name>
+  <synonym>
+    <key>ru</key>
+    <value>(СИ) Диалоги агента</value>
+  </synonym>
+  <comment>Заголовки диалогов агента</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Диалог агента</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Диалоги агента</value>
+  </listPresentation>
+  <descriptionLength>150</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <defaultObjectForm>Catalog.СИ_ДиалогиАгента.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СИ_ДиалогиАгента.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="3400b25f-d4dc-4e7b-a2bd-fbb71e0b4bfb">
+    <name>ДатаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата завершения</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="052a33b9-a56b-4b25-93b2-588d003edf4c">
+    <name>ДатаНачала</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата начала</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="4cd63646-44c1-4356-b839-1fb42737baad">
+    <name>Модель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Модель</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="25409b69-5be5-4ea1-846c-457d47e7842f">
+    <name>ОшибкаЗавершения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка завершения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+  </attributes>
+  <attributes uuid="4a5e6c5d-2d8f-4987-9bfc-dd96103165bb">
+    <name>ПрофильПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Профиль подключения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_ПрофилиПодключений</types>
+    </type>
+  </attributes>
+  <attributes uuid="100a575a-0b69-43fb-82f5-e5d2db02787d">
+    <name>Режим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Режим</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СИ_РежимиРаботы</types>
+    </type>
+  </attributes>
+  <attributes uuid="e1137357-12db-430a-8a49-d4f864b01720">
+    <name>СистемныйПромпт</name>
+    <synonym>
+      <key>ru</key>
+      <value>Системный промпт</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+  </attributes>
+  <attributes uuid="937e7ef6-0455-4697-beb3-4bed57f9ff6c">
+    <name>СистемныйПромптСтрока</name>
+    <synonym>
+      <key>ru</key>
+      <value>Системный промпт (строка)</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="b727f5ad-c78d-48a7-9b9d-6b029e5192fb">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СИ_СтатусыДиалога</types>
+    </type>
+  </attributes>
+  <attributes uuid="9ce6a02f-0fec-4f05-bc1e-c24ef970a22c">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b81a26a8-f9e7-499f-8679-f118f7ae90e6">
+    <name>ПотраченоТокенов</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="021b3763-e733-4c3d-94f7-1bf926c2395a">
+    <name>ЛимитТокенов</name>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="faa1bd5d-5794-40cc-bd8d-04d0d2ba57e2">
+    <name>СводкаДиалога</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сводка диалога</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+  </attributes>
+  <attributes uuid="db1088ff-0451-43f5-bff1-f951c51bf926">
+    <name>ИсторияТокенов</name>
+    <synonym>
+      <key>ru</key>
+      <value>История токенов</value>
+    </synonym>
+    <comment>Текущий размер истории диалога в токенах (total_tokens последнего ответа модели; после сжатия — расчётная оценка сжатой истории)</comment>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+      </numberQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="c008d786-93b7-4de8-b774-10f52bd8bd2a">
+    <name>АктивноеЗаданиеИд</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активное задание ИД</value>
+    </synonym>
+    <comment>Идентификатор фонового задания активного захода агента. Пишется при запуске, очищается при финализации/прерывании/аварии; лениво очищается при загрузке чата, если задание уже не активно.</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+  </attributes>
+  <attributes uuid="b6aa9004-0e56-44f4-bb5e-2a5bf9cba0a9">
+    <name>ПоказанСборПотребностей</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показан сбор потребностей</value>
+    </synonym>
+    <comment>Признак «пользователю уже показывали абзац-приглашение написать, каких данных не хватает» (не чаще одного раза на диалог)</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+  </attributes>
+  <tabularSections uuid="3edb9203-42bc-4042-a7f0-0880ea06e1f4">
+    <producedTypes>
+      <objectType typeId="8794cf1d-ad7d-4998-a19e-160629fd0acd" valueTypeId="1cd112f3-a8a8-491f-9133-8c75a9bd5e17"/>
+      <rowType typeId="a99cb648-8ab7-402e-beed-03cbbc2e7965" valueTypeId="9509a1bc-6389-49dd-8fae-d35eb87c637b"/>
+    </producedTypes>
+    <name>РазрешённыеИнструменты</name>
+    <attributes uuid="e7d34cdd-528a-4834-9047-d122ac4d9da0">
+      <name>Инструмент</name>
+      <synonym>
+        <key>ru</key>
+        <value>Инструмент</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.СИ_ИнструментыАгента</types>
+      </type>
+    </attributes>
+  </tabularSections>
+  <forms uuid="465a28fa-3e7a-4154-b868-a364b2845385">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2755cbd6-fe42-4ecb-bcc1-61eaabf3a462">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

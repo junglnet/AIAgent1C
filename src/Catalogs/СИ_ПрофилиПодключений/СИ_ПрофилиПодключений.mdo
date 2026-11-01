@@ -341,17 +341,6 @@
       <value>Bearer / КлючВЗаголовке / КлючВURL / Нет</value>
     </toolTip>
   </attributes>
-  <attributes uuid="c804c162-4943-46ab-9f30-0b3dbe21f750">
-    <name>ЗаголовокЧерезИИ</name>
-    <synonym>
-      <key>ru</key>
-      <value>Заголовок диалога через ИИ</value>
-    </synonym>
-    <comment>Способ автозаголовка нового диалога: Ложь (по умолчанию) — заголовок формируется из текста первого сообщения пользователя без вызова ИИ; Истина — прежний вариант с одним дешевым вызовом модели.</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-  </attributes>
   <tabularSections uuid="cf7f8a79-38a3-4354-a333-2c2c99b39785">
     <producedTypes>
       <objectType typeId="ae6b4c26-bed5-4f9b-a6bf-158b3d1ddc6f" valueTypeId="3bae19e7-9fef-40b2-b6c7-5d1502f31319"/>

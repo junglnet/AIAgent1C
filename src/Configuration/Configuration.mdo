@@ -34,8 +34,8 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <subsystems>Subsystem.СИ_НастройкиАгентИИ</subsystems>
   <subsystems>Subsystem.СИ_ЧатАгента</subsystems>
+  <subsystems>Subsystem.СИ_СистемноеАгентИИ</subsystems>
   <commonPictures>CommonPicture.СИ_Диалог</commonPictures>
   <commonPictures>CommonPicture.СИ_НовыйЧат</commonPictures>
   <commonPictures>CommonPicture.СИ_ОстановитьЧат</commonPictures>
@@ -46,25 +46,7 @@
   <commonPictures>CommonPicture.СИ_СжатьДиалог</commonPictures>
   <commonPictures>CommonPicture.СИ_УдалитьЧат</commonPictures>
   <roles>Role.СИ_АдминистрированиеЧатАгента</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_MCPСерверы</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_АктивныйРежим</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_ДиалогиАгента</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_ЗапрещенныеОбъектыЗапросов</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_ИнструментыАгента</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_ПамятьДиалога</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_РежимиРаботы</roles>
-  <roles>Role.СИ_ДобавлениеИзменениеСИ_СообщенияДиалога</roles>
-  <roles>Role.СИ_ИспользованиеСИ_ЧатАгента</roles>
-  <roles>Role.СИ_ПодсистемаСИ_АгентИИ</roles>
-  <roles>Role.СИ_ЧтениеСИ_MCPСерверы</roles>
-  <roles>Role.СИ_ЧтениеСИ_АктивныйРежим</roles>
-  <roles>Role.СИ_ЧтениеСИ_ДиалогиАгента</roles>
-  <roles>Role.СИ_ЧтениеСИ_ЗапрещенныеОбъектыЗапросов</roles>
-  <roles>Role.СИ_ЧтениеСИ_ИнструментыАгента</roles>
-  <roles>Role.СИ_ЧтениеСИ_ПамятьДиалога</roles>
-  <roles>Role.СИ_ЧтениеСИ_ПрофилиПодключений</roles>
-  <roles>Role.СИ_ЧтениеСИ_РежимиРаботы</roles>
-  <roles>Role.СИ_ЧтениеСИ_СообщенияДиалога</roles>
+  <roles>Role.СИ_ИспользованиеЧатАгента</roles>
   <commonModules>CommonModule.СИ_Агент1С</commonModules>
   <commonModules>CommonModule.СИ_Инструменты1С</commonModules>
   <commonModules>CommonModule.СИ_МаркдаунHTML</commonModules>
@@ -82,8 +64,8 @@
   <commonModules>CommonModule.СИ_ЧатHTMLСервер</commonModules>
   <commonModules>CommonModule.СИ_ЭмодзиHTMLКлиентСервер</commonModules>
   <scheduledJobs>ScheduledJob.СИ_ОбслуживаниеАгента</scheduledJobs>
-  <commonCommands>CommonCommand.СИ_ОткрытьНастройкиЧатАгента</commonCommands>
   <constants>Constant.СИ_АктивныйРежим</constants>
+  <constants>Constant.СИ_ЗаголовокЧерезИИ</constants>
   <constants>Constant.СИ_ЗапрещенныеОбъектыЗапросов</constants>
   <constants>Constant.СИ_ЛимитТокеновНаОтвет</constants>
   <catalogs>Catalog.СИ_MCPСерверы</catalogs>
@@ -92,6 +74,7 @@
   <catalogs>Catalog.СИ_ИнструментыАгента</catalogs>
   <catalogs>Catalog.СИ_ПрофилиПодключений</catalogs>
   <catalogs>Catalog.СИ_РежимиРаботы</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
   <enums>Enum.СИ_ПричиныЗавершения</enums>
   <enums>Enum.СИ_РежимыРаботыАгента</enums>
   <enums>Enum.СИ_РолиСообщений</enums>

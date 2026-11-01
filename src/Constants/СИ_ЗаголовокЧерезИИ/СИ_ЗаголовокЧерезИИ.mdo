@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9e9f482f-95b3-4d43-b0b9-555e7a0d27e5">
+  <producedTypes>
+    <managerType typeId="2e296f7e-4a86-4867-bb8e-c53a3fef0d93" valueTypeId="d35b49f3-9220-4ba6-a2e4-43dc62a714c1"/>
+    <valueManagerType typeId="ee65aec5-63d6-4a40-8008-c7afaa90f604" valueTypeId="86897f38-492a-4cd4-bbf7-b396c83a7791"/>
+    <valueKeyType typeId="4d4bff3b-52e1-47dc-a2b3-b080667c81fd" valueTypeId="b525c610-86e1-41a1-9bae-bac8acad78d3"/>
+  </producedTypes>
+  <name>СИ_ЗаголовокЧерезИИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заголовок диалога через ИИ</value>
+  </synonym>
+  <comment>Способ автозаголовка нового диалога: Ложь (по умолчанию) — заголовок из текста первого сообщения без ИИ; Истина — один дешевый вызов модели. Глобальная настройка (не зависит от профиля подключения).</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

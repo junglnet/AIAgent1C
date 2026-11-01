@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="37c1bf51-693e-4a18-9a6e-91fccc16dac5">
-  <name>СИ_ЧтениеСИ_ПрофилиПодключений</name>
-  <synonym>
-    <key>ru</key>
-    <value>(СИ) Чтение СИ_ПрофилиПодключений</value>
-  </synonym>
-</mdclass:Role>

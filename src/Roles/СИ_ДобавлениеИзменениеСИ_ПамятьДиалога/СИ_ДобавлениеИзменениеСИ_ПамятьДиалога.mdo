@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="25990918-29fb-4435-87ae-a416152d052b">
-  <name>СИ_ДобавлениеИзменениеСИ_ПамятьДиалога</name>
-  <synonym>
-    <key>ru</key>
-    <value>(СИ) Добавление/изменение СИ_ПамятьДиалога</value>
-  </synonym>
-</mdclass:Role>

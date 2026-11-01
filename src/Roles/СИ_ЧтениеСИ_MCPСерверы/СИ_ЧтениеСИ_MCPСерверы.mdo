@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b8a1e4ef-f726-47c7-b4c8-6b20a5d8b3aa">
-  <name>СИ_ЧтениеСИ_MCPСерверы</name>
-  <synonym>
-    <key>ru</key>
-    <value>(СИ) Чтение MCP-серверов</value>
-  </synonym>
-  <comment>Чтение справочника СИ_MCPСерверы</comment>
-</mdclass:Role>

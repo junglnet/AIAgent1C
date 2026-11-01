@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fa1d86bd-8b59-47af-b9b9-d139d4dcd124">
-  <name>СИ_ДобавлениеИзменениеСИ_MCPСерверы</name>
-  <synonym>
-    <key>ru</key>
-    <value>(СИ) Добавление/изменение MCP-серверов</value>
-  </synonym>
-  <comment>Добавление и изменение справочника СИ_MCPСерверы</comment>
-</mdclass:Role>

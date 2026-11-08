@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="599db4ac-44fa-4e04-8b10-c0e6aa47c154">
+  <producedTypes>
+    <objectType typeId="fba7a522-a7b4-4262-ad1e-08ee4b36df15" valueTypeId="3e730b7b-04bc-4a5a-b7de-674871e31750"/>
+    <refType typeId="bf32c245-d0ac-4e74-9082-7be375f0da2d" valueTypeId="f9efde38-2601-4e31-815e-fc694bc68beb"/>
+    <selectionType typeId="0405f2be-d2b0-4434-bb6b-1d794e35cf26" valueTypeId="460a820d-843c-42d2-b0b4-e40df7f951a1"/>
+    <listType typeId="b5c9d6d5-cedb-4d39-a5df-fdcbd724a3a6" valueTypeId="60d90797-020b-4be4-948d-222b81ece887"/>
+    <managerType typeId="140f2d16-fc7e-4109-9392-fba9d28ea533" valueTypeId="e7c2fd7e-2f21-4e6b-969f-4565ab94b0b2"/>
+  </producedTypes>
+  <name>ВерсииФайлов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:CatalogExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+  <checkUnique>true</checkUnique>
+</mdclass:Catalog>

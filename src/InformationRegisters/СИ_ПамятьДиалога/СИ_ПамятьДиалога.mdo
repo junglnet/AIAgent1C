@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:InformationRegister xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8767b55-fe15-48fb-af6f-19b7083556e0">
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8767b55-fe15-48fb-af6f-19b7083556e0">
   <producedTypes>
     <selectionType typeId="9a7de001-2c26-4bd9-bbbb-92bfd096014f" valueTypeId="2ced2169-7fa9-4e7b-8c74-abc08f11f636"/>
     <listType typeId="4b43ead2-baf5-430d-a436-5f2e64a0cd60" valueTypeId="fb243953-2c6b-4363-b821-92dae3036cd2"/>
@@ -90,8 +90,11 @@
       <value>Пользователь</value>
     </synonym>
     <type>
-      <types>CatalogRef.Пользователи</types>
+      <types>DefinedType.Пользователь</types>
     </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
   <dimensions uuid="991cf732-2e46-480f-85b7-3d5d48c7af72">
     <name>ИдДиалога</name>

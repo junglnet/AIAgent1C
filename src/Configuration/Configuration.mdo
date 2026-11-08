@@ -64,6 +64,12 @@
   <commonModules>CommonModule.СИ_ЧатHTMLСервер</commonModules>
   <commonModules>CommonModule.СИ_ЭмодзиHTMLКлиентСервер</commonModules>
   <scheduledJobs>ScheduledJob.СИ_ОбслуживаниеАгента</scheduledJobs>
+  <definedTypes>DefinedType.Пользователь</definedTypes>
+  <definedTypes>DefinedType.ВладелецПрисоединенныхФайлов</definedTypes>
+  <definedTypes>DefinedType.ВладелецПрисоединенныхФайловОбъект</definedTypes>
+  <definedTypes>DefinedType.ВладелецФайлов</definedTypes>
+  <definedTypes>DefinedType.ПрисоединенныйФайл</definedTypes>
+  <definedTypes>DefinedType.ПрисоединенныйФайлОбъект</definedTypes>
   <constants>Constant.СИ_АктивныйРежим</constants>
   <constants>Constant.СИ_ЗаголовокЧерезИИ</constants>
   <constants>Constant.СИ_ЗапрещенныеОбъектыЗапросов</constants>
@@ -74,7 +80,8 @@
   <catalogs>Catalog.СИ_ИнструментыАгента</catalogs>
   <catalogs>Catalog.СИ_ПрофилиПодключений</catalogs>
   <catalogs>Catalog.СИ_РежимиРаботы</catalogs>
-  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.ВерсииФайлов</catalogs>
+  <catalogs>Catalog.ТомаХраненияФайлов</catalogs>
   <enums>Enum.СИ_ПричиныЗавершения</enums>
   <enums>Enum.СИ_РежимыРаботыАгента</enums>
   <enums>Enum.СИ_РолиСообщений</enums>
@@ -82,6 +89,8 @@
   <enums>Enum.СИ_ТипыАвторизации</enums>
   <enums>Enum.СИ_ТипыИнструментов</enums>
   <enums>Enum.СИ_ТипыПодключенийMCP</enums>
+  <enums>Enum.ТипыХраненияФайлов</enums>
+  <enums>Enum.СтатусыИзвлеченияТекстаФайлов</enums>
   <dataProcessors>DataProcessor.СИ_ЧатАгента</dataProcessors>
   <informationRegisters>InformationRegister.СИ_ОжидающиеРазрешения</informationRegisters>
   <informationRegisters>InformationRegister.СИ_ПамятьДиалога</informationRegisters>

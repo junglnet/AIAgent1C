@@ -1776,7 +1776,7 @@
     </title>
     <id>37</id>
     <valueType>
-      <types>CatalogRef.Пользователи</types>
+      <types>DefinedType.Пользователь</types>
     </valueType>
     <view>
       <common>true</common>

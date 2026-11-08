@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="0d0f0d4e-df03-4102-83cf-2276154104b5" extendedConfigurationObject="ae698468-f42a-4400-aee6-fd849740e634">
+  <producedTypes>
+    <containerType typeId="dac5bde3-19a6-44f0-8f6b-cae2218438e9" valueTypeId="1900c86e-3b02-425d-9dcd-dd4e077a8570"/>
+  </producedTypes>
+  <name>ВладелецФайлов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:DefinedTypeExtension">
+    <extendedConfigurationObject>Checked</extendedConfigurationObject>
+    <typeExtension>
+      <types>
+        <state>Extended</state>
+        <type>CatalogRef.СИ_ДиалогиАгента</type>
+      </types>
+    </typeExtension>
+  </extension>
+</mdclass:DefinedType>

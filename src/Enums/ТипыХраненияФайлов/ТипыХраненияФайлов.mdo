@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="b181c1c9-1af7-4479-b56c-ae1aef1b8023">
+  <producedTypes>
+    <refType typeId="7c1dedb4-eb7b-4105-a90c-c0a159661b1d" valueTypeId="7d2ced37-e3ad-4c8d-a369-fafad1395294"/>
+    <listType typeId="41b49a75-156e-4597-8b52-1e17653a4f77" valueTypeId="2bf01c83-237f-40c8-a42f-b2ab66955f1b"/>
+    <managerType typeId="769c08dc-341c-4d29-abf1-5817b7d0cb43" valueTypeId="fa4e7f46-c942-43e8-9c63-c00009181034"/>
+  </producedTypes>
+  <name>ТипыХраненияФайлов</name>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:EnumExtension"/>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:Enum>

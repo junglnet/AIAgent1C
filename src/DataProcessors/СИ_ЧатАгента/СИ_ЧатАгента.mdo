@@ -33,4 +33,11 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
+  <forms uuid="ef1001a6-11a7-48fe-9ebe-020290130626">
+    <name>МастерНастроек</name>
+    <synonym>
+      <key>ru</key>
+      <value>Мастер настройки</value>
+    </synonym>
+  </forms>
 </mdclass:DataProcessor>

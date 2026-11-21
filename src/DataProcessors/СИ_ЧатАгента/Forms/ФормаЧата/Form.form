@@ -1281,6 +1281,35 @@
       <representationInContextMenu>Auto</representationInContextMenu>
       <locationInCommandBar>InCommandBar</locationInCommandBar>
     </items>
+    <items xsi:type="form:Button">
+      <name>КнопкаОткрытьМастерНастроек</name>
+      <id>202</id>
+      <title>
+        <key>ru</key>
+        <value>Мастер настройки</value>
+      </title>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <extendedTooltip>
+        <name>КнопкаОткрытьМастерНастроекРасширеннаяПодсказка</name>
+        <id>203</id>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <commandName>Form.Command.ОткрытьМастерНастроек</commandName>
+      <representation>Auto</representation>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <placementArea>UserCmds</placementArea>
+      <representationInContextMenu>Auto</representationInContextMenu>
+    </items>
     <horizontalAlign>Left</horizontalAlign>
   </autoCommandBar>
   <handlers>
@@ -2038,6 +2067,23 @@
     <representation>TextPicture</representation>
     <currentRowUse>Auto</currentRowUse>
     <selectedRowsUse>Auto</selectedRowsUse>
+  </formCommands>
+  <formCommands>
+    <name>ОткрытьМастерНастроек</name>
+    <title>
+      <key>ru</key>
+      <value>Мастер настройки</value>
+    </title>
+    <id>196</id>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОткрытьМастерНастроек</name>
+      </handler>
+    </action>
+    <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
     <navigationPanel/>

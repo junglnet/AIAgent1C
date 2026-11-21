@@ -1789,21 +1789,90 @@
     <items xsi:type="form:FormGroup">
       <name>ГруппаПоддержка</name>
       <id>420</id>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияПоддержкаЗаголовок</name>
-        <id>421</id>
-        <title>
-          <key>ru</key>
-          <value>Поддержка ИИ-агента — StrongOwl</value>
-        </title>
+      <items xsi:type="form:FormGroup">
+        <name>ГруппаВерсия</name>
+        <id>449</id>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияВерсия</name>
+          <id>434</id>
+          <title>
+            <key>ru</key>
+            <value>Версия</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияВерсияРасширеннаяПодсказка</name>
+            <id>436</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияВерсияКонтекстноеМеню</name>
+            <id>435</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
+        <items xsi:type="form:Decoration">
+          <name>ДекорацияПроверитьОбновление</name>
+          <id>451</id>
+          <title>
+            <key>ru</key>
+            <value>Проверить обновление</value>
+          </title>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <extendedTooltip>
+            <name>ДекорацияПроверитьОбновлениеРасширеннаяПодсказка</name>
+            <id>453</id>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <contextMenu>
+            <name>ДекорацияПроверитьОбновлениеКонтекстноеМеню</name>
+            <id>452</id>
+            <autoFill>true</autoFill>
+          </contextMenu>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <handlers>
+              <event>Click</event>
+              <name>ДекорацияПроверитьОбновлениеНажатие</name>
+            </handlers>
+            <hyperlink>true</hyperlink>
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </items>
         <visible>true</visible>
         <enabled>true</enabled>
         <userVisible>
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ДекорацияПоддержкаЗаголовокРасширеннаяПодсказка</name>
-          <id>422</id>
+          <name>ГруппаВерсияРасширеннаяПодсказка</name>
+          <id>450</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1811,17 +1880,15 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
-        <type>Label</type>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
+        <type>UsualGroup</type>
+        <extInfo xsi:type="form:UsualGroupExtInfo"/>
       </items>
       <items xsi:type="form:Decoration">
-        <name>ДекорацияПоддержкаОписание</name>
-        <id>423</id>
+        <name>ДекорацияСайт</name>
+        <id>437</id>
         <title>
           <key>ru</key>
-          <value>Помощь, когда агент уже работает: сопровождение — обновления, разбор ошибок и доработка инструментов под новые задачи.</value>
+          <value>Сайт: strongowl.ru</value>
         </title>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -1829,8 +1896,8 @@
           <common>true</common>
         </userVisible>
         <extendedTooltip>
-          <name>ДекорацияПоддержкаОписаниеРасширеннаяПодсказка</name>
-          <id>424</id>
+          <name>ДекорацияСайтРасширеннаяПодсказка</name>
+          <id>439</id>
           <type>Label</type>
           <autoMaxWidth>true</autoMaxWidth>
           <autoMaxHeight>true</autoMaxHeight>
@@ -1838,125 +1905,178 @@
             <horizontalAlign>Left</horizontalAlign>
           </extInfo>
         </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияСайтКонтекстноеМеню</name>
+          <id>438</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
         <type>Label</type>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияПоддержкаЧтоВходит</name>
-        <id>425</id>
-        <title>
-          <key>ru</key>
-          <value>Что входит в поддержку:
-• Обновления расширения — новые версии и адаптация ваших настроек.
-• Помощь при ошибках — разбор проблемы и решение в оговорённые сроки.
-• Доработка инструментов — правки индивидуальных инструментов под новые задачи.
-• Время ответа — будни, 10:00–19:00 (МСК).</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ДекорацияПоддержкаЧтоВходитРасширеннаяПодсказка</name>
-          <id>426</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>Label</type>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияПоддержкаРекомендации</name>
-        <id>427</id>
-        <title>
-          <key>ru</key>
-          <value>Перед обращением загляните в инструкции — возможно, решение уже описано. Для быстрого разбора укажите конфигурацию 1С, версию платформы и текст ошибки из журнала регистрации. Ошибки и идеи по доработке можно оформить issue в GitHub-репозитории: github.com/junglnet/AIAgent1C/issues</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ДекорацияПоддержкаРекомендацииРасширеннаяПодсказка</name>
-          <id>428</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>Label</type>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Decoration">
-        <name>ДекорацияПоддержкаКонтакты</name>
-        <id>429</id>
-        <title>
-          <key>ru</key>
-          <value>Контакты: info@strongowl.ru · Telegram: t.me/strongowlai</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ДекорацияПоддержкаКонтактыРасширеннаяПодсказка</name>
-          <id>430</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>Label</type>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </items>
-      <items xsi:type="form:Button">
-        <name>ОткрытьСайтПоддержки</name>
-        <id>431</id>
-        <title>
-          <key>ru</key>
-          <value>Открыть страницу поддержки (strongowl.ru)</value>
-        </title>
-        <visible>true</visible>
-        <enabled>true</enabled>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
-        <extendedTooltip>
-          <name>ОткрытьСайтПоддержкиРасширеннаяПодсказка</name>
-          <id>432</id>
-          <type>Label</type>
-          <autoMaxWidth>true</autoMaxWidth>
-          <autoMaxHeight>true</autoMaxHeight>
-          <extInfo xsi:type="form:LabelDecorationExtInfo">
-            <horizontalAlign>Left</horizontalAlign>
-          </extInfo>
-        </extendedTooltip>
-        <type>Hyperlink</type>
-        <commandName>Form.Command.ОткрытьСайтПоддержки</commandName>
-        <representation>Auto</representation>
         <autoMaxWidth>true</autoMaxWidth>
         <autoMaxHeight>true</autoMaxHeight>
-        <placementArea>UserCmds</placementArea>
-        <representationInContextMenu>Auto</representationInContextMenu>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияСайтНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияСтраницаПоддержки</name>
+        <id>440</id>
+        <title>
+          <key>ru</key>
+          <value>Страница поддержки: strongowl.ru/support.html</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияСтраницаПоддержкиРасширеннаяПодсказка</name>
+          <id>442</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияСтраницаПоддержкиКонтекстноеМеню</name>
+          <id>441</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияСтраницаПоддержкиНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияПочта</name>
+        <id>443</id>
+        <title>
+          <key>ru</key>
+          <value>Эл. почта: info@strongowl.ru</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияПочтаРасширеннаяПодсказка</name>
+          <id>445</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияПочтаКонтекстноеМеню</name>
+          <id>444</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияПочтаНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияТелеграм</name>
+        <id>446</id>
+        <title>
+          <key>ru</key>
+          <value>Telegram: t.me/strongowlai</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияТелеграмРасширеннаяПодсказка</name>
+          <id>448</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияТелеграмКонтекстноеМеню</name>
+          <id>447</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияТелеграмНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </items>
+      <items xsi:type="form:Decoration">
+        <name>ДекорацияGitHub</name>
+        <id>454</id>
+        <title>
+          <key>ru</key>
+          <value>GitHub: github.com/junglnet/AIAgent1C</value>
+        </title>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ДекорацияGitHubРасширеннаяПодсказка</name>
+          <id>456</id>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <contextMenu>
+          <name>ДекорацияGitHubКонтекстноеМеню</name>
+          <id>455</id>
+          <autoFill>true</autoFill>
+        </contextMenu>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <handlers>
+            <event>Click</event>
+            <name>ДекорацияGitHubНажатие</name>
+          </handlers>
+          <hyperlink>true</hyperlink>
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
       </items>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -2554,23 +2674,6 @@
     <action xsi:type="form:FormCommandHandlerContainer">
       <handler>
         <name>ОткрытьЧатАгента</name>
-      </handler>
-    </action>
-    <currentRowUse>Auto</currentRowUse>
-  </formCommands>
-  <formCommands>
-    <name>ОткрытьСайтПоддержки</name>
-    <title>
-      <key>ru</key>
-      <value>Открыть страницу поддержки</value>
-    </title>
-    <id>26</id>
-    <use>
-      <common>true</common>
-    </use>
-    <action xsi:type="form:FormCommandHandlerContainer">
-      <handler>
-        <name>ОткрытьСайтПоддержки</name>
       </handler>
     </action>
     <currentRowUse>Auto</currentRowUse>
